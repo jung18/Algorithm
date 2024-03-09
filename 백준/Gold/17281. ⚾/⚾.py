@@ -2,7 +2,7 @@ import sys
 from itertools import permutations
 input = sys.stdin.readline
 
-
+# 각 결과에 따라 이닝 점수 계산
 def baseball(per, play):
     global per_idx
     b1, b2, b3 = 0, 0, 0
@@ -35,7 +35,7 @@ max_score = 0
 
 for per in permutations([i for i in range(1, 9)]):  # 타순 정하기
     per = list(per)
-    per.insert(3, 0)
+    per.insert(3, 0)  # 1번 타자를 4번째로 배치
     per_idx = 0
     tmp = 0
     for play in players:  # 각 이닝
