@@ -7,9 +7,9 @@ lis = [arr[0]]
 
 
 def binary_search(key, start, end):
-    while start < end:
+    while start <= end:
         middle = (start + end) // 2
-        if key == lis[middle] or lis[middle-1] < key < lis[middle]:
+        if key == lis[middle]:
             return middle
         elif key < lis[middle]:
             end = middle - 1
