@@ -25,6 +25,4 @@ while (head < queue.length) {
     }
 }
 
-for (let i = 2; i < parents.length; i++) {
-    console.log(parents[i]);
-}
+console.log(parents.slice(2).join('\n').trim())
